@@ -61,13 +61,20 @@
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
         <dependency>
-			<groupId>com.day.cq</groupId>
-			<artifactId>cq-commons</artifactId>
-		</dependency>
-		<dependency>
-           	<groupId>com.day.cq.wcm</groupId>
-			<artifactId>cq-wcm-api</artifactId>
-           </dependency>
+	    <groupId>com.day.cq</groupId>
+	    <artifactId>cq-commons</artifactId>
+	</dependency>
+	<dependency>
+       		<groupId>com.day.cq.wcm</groupId>
+		<artifactId>cq-wcm-api</artifactId>
+        </dependency>
+	<dependency>
+		<groupId>com.adobe.aem</groupId>
+		<artifactId>uber-jar</artifactId>
+    		<version>6.2.0</version>
+    		<classifier>apis</classifier>
+    		<scope>provided</scope>
+	</dependency>
     </dependencies>
 
     <!-- ====================================================================== -->
