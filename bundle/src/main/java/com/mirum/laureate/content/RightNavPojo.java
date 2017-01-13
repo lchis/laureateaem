@@ -1,5 +1,7 @@
 package com.mirum.laureate.content;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 import org.apache.sling.api.resource.Resource;
@@ -16,8 +18,9 @@ public class RightNavPojo extends WCMUsePojo{
 	private static final String LINK_TO_BLACKBOARD_PROP 	= "blackboardLink";
 	private static final String LINK_TO_BLACKBOARD_DEFAULT 	= "";
 	private static final String PATH_TO_SYLLABUS_PAGE		= "syllabus";
+	private static final String[] CHILD_PAGES_TO_IGNORE		= {PATH_TO_SYLLABUS_PAGE};
 	
-	private Iterator<Page> childPages;
+	private ArrayList<Page> childPages;
 	private String linkToBlackboard;
 	private String syllabusUrl;
 	private boolean showSyllabus;
@@ -57,10 +60,20 @@ public class RightNavPojo extends WCMUsePojo{
 	}
 	
 	private void setChildPages(){
-		childPages = getCurrentPage().listChildren();
+		Iterator<Page> children = getCurrentPage().listChildren();
+		childPages = new ArrayList<Page>();
+		
+		while(children.hasNext()){
+			Page currChild = children.next();
+			if(Arrays.asList(CHILD_PAGES_TO_IGNORE).contains(currChild.getName())){
+				LOGGER.info("Ignoring page " + currChild.getName());
+				continue;
+			}
+			childPages.add(currChild);
+		}
 	}
 	
-	public Iterator<Page> getChildPages(){
+	public ArrayList<Page> getChildPages(){
 		return childPages;
 	}
 	
