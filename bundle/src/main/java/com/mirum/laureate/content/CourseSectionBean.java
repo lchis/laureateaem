@@ -4,7 +4,7 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 
 public class CourseSectionBean {
-	private static final String COURSE_LABEL_PROP = "sectionId";
+	private static final String COURSE_LABEL_PROP = "courseSectionLabel";
 	
 	private String label;
 	private String id;
@@ -14,15 +14,15 @@ public class CourseSectionBean {
 		this.id = generateId(label);
 	}
 	
-	public static String generateId(String label){
-		return label.replace(' ', '-').toLowerCase();
-	}
-	
 	public String getLabel(){
 		return label;
 	}
 	
 	public String getId(){
 		return id;
+	}
+	
+	public static String generateId(String label){
+		return label.replace(' ', '-').toLowerCase();
 	}
 }
