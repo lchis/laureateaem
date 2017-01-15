@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Course Section"
+    jcr:title="Page Section"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -15,12 +15,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <courseSectionLabel
+                    <pageSectionLabel
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
-                        fieldDescription="Label for the course section that will serve as a link in the top nav bar"
-                        fieldLabel="Course Section Label:"
-                        name="./courseSectionLabel"/>
+                        fieldDescription="Label for the page section that will serve as a link in the top nav bar"
+                        fieldLabel="Page Section Label:"
+                        name="./pageSectionLabel"/>
                 </items>
             </column>
         </items>
