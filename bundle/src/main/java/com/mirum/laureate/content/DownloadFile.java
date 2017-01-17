@@ -8,7 +8,7 @@ import java.util.Map;
 
 import javax.jcr.Node;
 
-public class DownloadLink extends WCMUsePojo {
+public class DownloadFile extends WCMUsePojo {
 	private static final String FILE_REFERENCE_PROP = "fileReference";
 	
 	private static final Map<String, String> MIME_TYPES;

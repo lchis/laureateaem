@@ -1,4 +1,4 @@
-<nav class="medium-8 columns hide-for-small" data-sly-use.courseSections="com.mirum.laureate.content.ListCourseSectionLabels">
+<nav class="medium-8 columns hide-for-small" data-sly-use.courseSections="com.mirum.laureate.content.ListPageSectionLabels">
 	<div class="row collapse">
 		<div class="medium-12 columns">
 			<a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" id="course-title">
@@ -13,9 +13,9 @@
                 	<label>Course Information</label>
                 </li>
                 <li> <a href="#introduction" data-magellan-arrival="introduction"> Introduction</a> </li>
-                <sly data-sly-list.courseSectionLabel="${courseSections.courseSectionLabels}">
-					<li><a href="#${courseSectionLabel.id}" data-magellan-arrival="${courseSectionLabel.id}">
-						${courseSectionLabel.label}
+                <sly data-sly-list.pageSectionLabel="${pageSections.pageSectionLabels}">
+					<li><a href="#${pageSectionLabel.id}" data-magellan-arrival="${pageSectionLabel.id}">
+						${pageSectionLabel.label}
 					</a></li>
                 </sly>
             </ul>
