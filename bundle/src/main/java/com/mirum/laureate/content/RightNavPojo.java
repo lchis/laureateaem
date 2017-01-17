@@ -15,10 +15,13 @@ import com.day.cq.wcm.api.Page;
 public class RightNavPojo extends WCMUsePojo{
 	private static final Logger LOGGER = LoggerFactory.getLogger(RightNavPojo.class);
 	
-	private static final String LINK_TO_BLACKBOARD_PROP 	= "blackboardLink";
-	private static final String LINK_TO_BLACKBOARD_DEFAULT 	= "";
-	private static final String PATH_TO_SYLLABUS_PAGE		= "syllabus";
-	private static final String[] CHILD_PAGES_TO_IGNORE		= {PATH_TO_SYLLABUS_PAGE};
+	private static final String LINK_TO_BLACKBOARD_PROP 		= "blackboardLink";
+	private static final String LINK_TO_BLACKBOARD_DEFAULT 		= "";
+	private static final String PATH_TO_SYLLABUS_PAGE			= "syllabus";
+	/*private static final String PATH_TO_COURSE_OVERVIEW_PAGE	= "course-overview";
+	private static final String PATH_TO_COURSE_INFORMATION_PAGE	= "course-information";
+	private static final String PATH_TO_RESOURCE_LIST_PAGE		= "resource-list";*/
+	private static final String[] CHILD_PAGES_TO_IGNORE			= {PATH_TO_SYLLABUS_PAGE};
 	
 	private ArrayList<Page> childPages;
 	private String linkToBlackboard;
