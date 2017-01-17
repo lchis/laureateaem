@@ -47,11 +47,47 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/include"
                         path="foundation/components/page/cq:dialog/content/items/tabs/items/livecopy"/>
-                    <laureate
+                    <laureatedialogtab
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Laureate"
-                        sling:resourceType="granite/ui/components/foundation/include"
-                        path="laureate/components/structure/page/walden_courseinformation_page/laureate"/>
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <blackboardlink/>
+                                    <hero
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                        autoStart="{Boolean}false"
+                                        class="cq-droptarget"
+                                        fieldLabel="Hero Image:"
+                                        fileNameParameter="./hero/fileName"
+                                        fileReferenceParameter="./hero/fileReference"
+                                        mimeTypes="[image]"
+                                        multiple="{Boolean}false"
+                                        name="./hero/file"
+                                        title="Upload Image"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true"/>
+                                    <resType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        emptyText="wcm/foundation/components/image"
+                                        fieldDescription="Hidden field placeholder for hero image resourceType"
+                                        fieldLabel="hero Resource Type"
+                                        name="./hero/sling:resourceType"
+                                        renderHidden="{Boolean}true"
+                                        value="wcm/foundation/components/image"/>
+                                </items>
+                            </column>
+                        </items>
+                    </laureatedialogtab>
                 </items>
             </tabs>
         </items>
