@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-01-14T14:14:58.512-08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/msm/templates/blueprint"
+        jcr:description="Blueprint to build a Laureate course page, along with the required subpages."
+        jcr:lastModified="{Date}2017-01-14T14:14:58.510-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Laureate"
+        sling:resourceType="wcm/msm/components/blueprint"
+        sitePath="/content/laureatecourse"
+        thumbnailRotate="0">
+        <dialog/>
+        <thumbnail/>
+    </jcr:content>
+</jcr:root>

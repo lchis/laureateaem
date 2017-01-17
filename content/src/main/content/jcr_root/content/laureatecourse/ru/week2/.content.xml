@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-01-16T10:44:20.352-08:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-01-16T10:44:20.354-08:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/laureate/templates/walden_courseinformation_page"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Week 2"
+        sling:resourceType="laureate/components/structure/page/walden_courseinformation_page"/>
+</jcr:root>
