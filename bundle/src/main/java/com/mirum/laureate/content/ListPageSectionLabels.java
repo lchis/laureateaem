@@ -17,6 +17,7 @@ public class ListPageSectionLabels extends WCMUsePojo{
 	private final static String PAGE_SECTIONS_PAR 			= "par";
 	private final static String PAGE_SECTION_RESOURCE_TYPE 	= "laureate/components/content/page-section";
 
+	private PageSectionBean firstPageSectionBean;
 	private ArrayList<PageSectionBean> pageSectionLabels;
 	
 	@Override
@@ -26,6 +27,12 @@ public class ListPageSectionLabels extends WCMUsePojo{
 		Resource pageContentResource = resourceResolver.adaptTo(PageManager.class).getContainingPage(getResource()).getContentResource();
 		Resource pageSectionsParent = pageContentResource.getChild(PAGE_SECTIONS_PAR);
 		Iterator<Resource> pageSections = pageSectionsParent.listChildren();
+		
+		if(!pageSections.hasNext()){
+			return;
+		}
+		
+		firstPageSectionBean = new PageSectionBean(pageSections.next());
 		
 		pageSectionLabels = new ArrayList<PageSectionBean>();
 		while(pageSections.hasNext()){
@@ -49,5 +56,9 @@ public class ListPageSectionLabels extends WCMUsePojo{
 
 	public ArrayList<PageSectionBean> getPageSectionLabels(){
 		return pageSectionLabels;
+	}
+	
+	public PageSectionBean getFirstPageSectionLabel(){
+		return firstPageSectionBean;
 	}
 }

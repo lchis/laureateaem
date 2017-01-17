@@ -14,9 +14,9 @@ import com.adobe.cq.sightly.WCMUsePojo;
 public class PageSectionLabel extends WCMUsePojo {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PageSectionLabel.class);
 	
-	private final static String[] WALDEN_COLOURS = {"purple", "navy", "gold"}; 
-	private final static String[] UNITEC_COLOURS={"blue", "blue", "blue"};
-	private final static String[] UVM_COLOURS={"blue", "blue", "red"};
+	private final static String[] WALDEN_COLOURS = {"", "purple", "navy", "gold"}; 
+	private final static String[] UNITEC_COLOURS={"", "blue", "blue", "blue"};
+	private final static String[] UVM_COLOURS={"", "blue", "blue", "red"};
 	private final static String DEFAULT_COLOUR = "";
 	
 	private PageSectionBean pageSectionBean;
@@ -49,6 +49,10 @@ public class PageSectionLabel extends WCMUsePojo {
 	
 	public PageSectionBean getPageSectionBean(){
 		return pageSectionBean;
+	}
+	
+	public boolean getIsFirst(){
+		return sectionIndex == 0;
 	}
 	
 	public String getColour(){
