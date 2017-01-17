@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2017-01-16T17:20:48.057-08:00"
+        cq:lastModified="{Date}2017-01-16T18:03:31.615-08:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/laureate/templates/walden_courseinformation_page"
         jcr:lastModified="{Date}2017-01-16T10:41:45.545-08:00"
@@ -22,7 +22,11 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/page-section"
-                pageSectionLabel="Course Information"/>
+                pageSectionLabel="Course Information">
+                <page-section-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys"/>
+            </page_section>
             <page_section_1051933009
                 jcr:created="{Date}2017-01-16T17:17:51.509-08:00"
                 jcr:createdBy="admin"
@@ -31,6 +35,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/page-section"
                 pageSectionLabel="Academic Intergrity"/>
+            <page_section_1753334952
+                jcr:created="{Date}2017-01-16T18:03:22.120-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-16T18:03:31.614-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="laureate/components/content/page-section"
+                pageSectionLabel="Doc Sharing"/>
         </par>
         <image
             jcr:lastModified="{Date}2017-01-16T10:41:45.545-08:00"
