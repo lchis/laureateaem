@@ -2,4 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/laureate"/>
     <filter root="/etc/designs/laureate"/>
+    <filter root="/etc/blueprints/laureate"/>
+    <filter root="/content/laureatecourse"/>
 </workspaceFilter>
