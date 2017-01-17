@@ -14,9 +14,6 @@
 	<ul class="side-nav primary">
         <li data-sly-test="${rightNavPojo.showSyllabus}"><a href="${rightNavPojo.syllabusUrl}.html" class="nav-link">Syllabus</a></li>
 		<li> <a href="#disabled" onclick="ActivateLink('Calendar','BBWindow', this)" class="nav-link"> Course Calendar </a> </li>
-		<li> <a href="USW1_NURS_6001_courseOverview.html" class="nav-link"> Course Overview </a></li>
-		<li> <a href="USW1_NURS_6001_courseInformation.html" class="nav-link"> Course Information </a> </li>
-		<li> <a href="USW1_NURS_6001_resourceList.html" class="nav-link"> Resource List </a> </li>
 	</ul>
     <ul class="side-nav secondary" data-sly-list.childPage="${rightNavPojo.childPages}">
     <li> <a href="${childPage.path}.html" class="nav-link">${childPage.title}</a> </li>
