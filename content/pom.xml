@@ -119,5 +119,30 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>autoInstallPackageRemote</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>content-package-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-content-package-publish</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <configuration>
+                                    <targetURL>http://${remote.crx.host}:${remote.crx.port}/crx/packmgr/service.jsp</targetURL>
+                                    <username>${remote.crx.username}</username>
+                                    <password>${remote.crx.password}</password>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>

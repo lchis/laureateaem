@@ -1,7 +1,5 @@
 package com.mirum.laureate.content;
 
-import org.apache.sling.api.resource.Resource;
-
 import com.adobe.cq.sightly.WCMUsePojo;
 import com.day.cq.wcm.api.Page;
 

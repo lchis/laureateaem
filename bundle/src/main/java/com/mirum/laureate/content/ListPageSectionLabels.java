@@ -26,6 +26,11 @@ public class ListPageSectionLabels extends WCMUsePojo{
 		
 		Resource pageContentResource = resourceResolver.adaptTo(PageManager.class).getContainingPage(getResource()).getContentResource();
 		Resource pageSectionsParent = pageContentResource.getChild(PAGE_SECTIONS_PAR);
+		
+		if(pageSectionsParent == null){
+			return;
+		}
+		
 		Iterator<Resource> pageSections = pageSectionsParent.listChildren();
 		
 		if(!pageSections.hasNext()){
