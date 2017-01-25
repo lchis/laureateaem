@@ -59,7 +59,8 @@ function ActivateLink ( resource, target, myObj ) {
             txtURL  = getBbURL(resource);
             if (resource == 'CourseHome') {
                 courseid = stripCourseID(txtURL);
-                txtURL = link['CourseHome'] + courseid
+                txtURL = link['CourseHome'] + courseid;
+                txtURL="https://class.waldenu.edu/webapps/blackboard/execute/launcher?type=Course&url=&id=_16242545_1";
             }
         }
 

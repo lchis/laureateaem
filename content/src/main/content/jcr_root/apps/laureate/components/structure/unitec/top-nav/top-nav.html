@@ -1,19 +1,25 @@
-             <nav class="medium-8 columns hide-for-small">
-                <div class="row collapse">
-                    <div class="medium-12 columns"><a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" id="course-title">  PT4025: <em>Mercadotecnia Digital</em>  </a></div>
-                </div>
-                <div class="row collapse">
-                    <div class="medium-12 columns">
-                        <ul class="inline-list hide-for-print week-navigation">
-                            <li>
-                                <label>Semana 1</label>
-                            </li>
-                            <li> <a href="#introduccion" data-magellan-arrival="introduccion"> Introducción</a> </li>
-                            <li> <a href="#recursos" data-magellan-arrival="recursos"> Recursos </a> </li>
-                            <li> <a href="#actividad" data-magellan-arrival="actividad"> Actividades </a> </li>
-                            <li> <a href="#evaluacion" data-magellan-arrival="evaluacion"> Evaluaciones </a> </li>
-                            <li> <a href="#resumen" data-magellan-arrival="resumen"> Resumen Semanal </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<nav class="medium-8 columns hide-for-small" data-sly-use.pageSections="com.mirum.laureate.content.ListPageSectionLabels">
+	<div class="row collapse">
+    	<div class="medium-12 columns">
+    		<a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" id="course-title"
+    			data-sly-include="course-title.html">
+    		</a>
+        </div>
+     </div>
+     <div class="row collapse">
+         <div class="medium-12 columns">
+            <ul class="inline-list hide-for-print week-navigation">
+               <li>
+                    <label>${pageSections.firstPageSectionLabel.label}</label>
+               </li>
+               <li> <a href="#introduccion" data-magellan-arrival="introduccion"> Introducción</a> </li>
+               <sly data-sly-list.pageSectionLabel="${pageSections.pageSectionLabels}">
+					<li><a href="#${pageSectionLabel.id}" data-magellan-arrival="${pageSectionLabel.id}">
+						${pageSectionLabel.label}
+					</a></li>
+                </sly>
+        	</ul>
+    	</div>
+	</div>
+</nav>
+            
