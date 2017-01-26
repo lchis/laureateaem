@@ -1,6 +1,16 @@
 <!--<Sightly Video Component>-->
-<div data-sly-use.heroTextObject="com.tavant.cq.kaltura.sightly.SetupKalturaVideoData" data-sly-test="${heroTextObject}"></div>
+<!--div data-sly-use.heroTextObject="com.tavant.cq.kaltura.sightly.SetupKalturaVideoData" data-sly-test="${heroTextObject}"></div>
 <p data-sly-test="${properties.isPresent}">
 <iframe src=
 "http://www.kaltura.com/p/${properties.partnerId}/sp/${properties.partnerId}00/embedIframeJs/uiconf_id/33065512/partner_id/${properties.partnerId}?iframeembed=true&playerId=${properties.id}&entry_id=${properties.id}" width="400" height="330" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-</p>
+</p-->
+
+<!--
+<script src="http://cdnapi.kaltura.com/p/2238021/sp/223802100/embedIframeJs/uiconf_id/37928331/partner_id/2238021?autoembed=true&entry_id=1_e498bc6o&playerId=kaltura_player_1485381988&cache_st=1485381988&width=740&height=330&flashvars[streamerType]=auto">
+</script-->
+<sly data-sly-use.video="com.mirum.laureate.content.VideoPojo">
+    <div class="authorhelp" data-sly-test.isSetup="${!video.partnerId || !video.entryId}">
+		Double click to open dialog and edit video details
+    </div>
+    <script src="http://cdnapi.kaltura.com/p/${video.partnerId}/sp/${video.partnerId}00/embedIframeJs/uiconf_id/37928331/partner_id/${video.partnerId}?autoembed=true&entry_id=${video.entryId}&playerId=${video.videoObjId}&cache_st=1362074486&width=740&height=330&flashvars[streamerType]=auto"></script>
+</sly>
