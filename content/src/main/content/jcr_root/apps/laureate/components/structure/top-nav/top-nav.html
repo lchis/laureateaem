@@ -12,7 +12,7 @@
                 <li>
                 	<label>${pageSections.firstPageSectionLabel.label}</label>
                 </li>
-                <li> <a href="#introduction" data-magellan-arrival="introduction"> Introduction</a> </li>
+                <li> <a href="#introduction" data-magellan-arrival="introduction"> ${'Introduction' @ i18n, locale='es'}</a> </li>
                 <sly data-sly-list.pageSectionLabel="${pageSections.pageSectionLabels}">
 					<li><a href="#${pageSectionLabel.id}" data-magellan-arrival="${pageSectionLabel.id}">
 						${pageSectionLabel.label}
@@ -23,3 +23,6 @@
         </div>
     </div>
 </nav>
+
+
+${'Introduction' @ i18n, locale='es'}
