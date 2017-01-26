@@ -4,4 +4,6 @@
     <filter root="/etc/designs/laureate"/>
     <filter root="/etc/blueprints/laureate"/>
     <filter root="/content/laureatecourse"/>
+    <filter root="/etc/workflow/models/laureate-course-creation-wf"/>
+    <filter root="/libs/cq/core/content/projects/templates/default/workflows/models/createcourse"/>
 </workspaceFilter>
