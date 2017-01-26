@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Creates a simple project"
+    jcr:primaryType="cq:Template"
+    jcr:title="Simple Project"
+    ranking="{Long}1"
+    wizard="/libs/cq/core/content/projects/wizard/steps/defaultproject.html">
+    <workflows
+        jcr:primaryType="nt:unstructured"
+        tags="[]">
+        <models jcr:primaryType="nt:unstructured">
+            <sampleworkflow/>
+            <launch/>
+            <landing/>
+            <email/>
+            <createcourse
+                jcr:primaryType="nt:unstructured"
+                modelId="/etc/workflow/models/laureate-course-creation-wf/jcr:content/model"
+                wizard="/libs/cq/core/content/projects/workflowwizards/default_workflow.html"/>
+        </models>
+    </workflows>
+</jcr:root>
