@@ -58,7 +58,13 @@ public class PageSectionLabel extends WCMUsePojo {
 	public String getColour(){
 		if(sectionIndex >= 0){
 			int colourIndex = sectionIndex % WALDEN_COLOURS.length;
-			return WALDEN_COLOURS[colourIndex];
+			String title = getCurrentPage().getAbsoluteParent(2).getTitle();
+			if(title.contains("uvm") )
+				return UVM_COLOURS[colourIndex];
+			else if (title.contains("unitec") )
+				return UNITEC_COLOURS[colourIndex];
+			else
+				return WALDEN_COLOURS[colourIndex];
 		} else{
 			LOGGER.warn("Received invalid section node id, returning blank colour");
 			return DEFAULT_COLOUR;
