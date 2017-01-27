@@ -1,3 +1,3 @@
 #base=css
 main.css
-#aem-styles.css
+aem-styles.css
