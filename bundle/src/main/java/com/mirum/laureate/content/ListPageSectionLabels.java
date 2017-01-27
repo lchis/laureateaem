@@ -3,12 +3,16 @@ package com.mirum.laureate.content;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.cq.sightly.WCMUsePojo;
+import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
 public class ListPageSectionLabels extends WCMUsePojo{
@@ -16,9 +20,13 @@ public class ListPageSectionLabels extends WCMUsePojo{
 	
 	private final static String PAGE_SECTIONS_PAR 			= "par";
 	private final static String PAGE_SECTION_RESOURCE_TYPE 	= "laureate/components/content/page-section";
-
+	private static final String TEMPLATE_PROP = "cq:template";
+	private static final String JCR_CONTENT_NODE = "jcr:content";
+	
 	private PageSectionBean firstPageSectionBean;
 	private ArrayList<PageSectionBean> pageSectionLabels;
+	private String template;
+	private String assumedSiteLanguage="en";
 	
 	@Override
 	public void activate() throws Exception {
@@ -27,6 +35,7 @@ public class ListPageSectionLabels extends WCMUsePojo{
 		Resource pageContentResource = resourceResolver.adaptTo(PageManager.class).getContainingPage(getResource()).getContentResource();
 		Resource pageSectionsParent = pageContentResource.getChild(PAGE_SECTIONS_PAR);
 		
+		template=findTemplate(getResource());
 		if(pageSectionsParent == null){
 			return;
 		}
@@ -65,5 +74,39 @@ public class ListPageSectionLabels extends WCMUsePojo{
 	
 	public PageSectionBean getFirstPageSectionLabel(){
 		return firstPageSectionBean;
+	}
+	
+	
+	private String findTemplate(Resource resource) throws RepositoryException{
+		ResourceResolver resourceResolver = resource.getResourceResolver();
+		PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
+		Page containingPage = pageManager.getContainingPage(resource);
+		Node pageNode = containingPage.adaptTo(Node.class);
+		
+		Node pageConentNode;
+		if(pageNode.hasNode(JCR_CONTENT_NODE)){
+			pageConentNode = pageNode.getNode(JCR_CONTENT_NODE);
+			
+			if(pageConentNode.hasProperty(TEMPLATE_PROP)){
+				String templatePath = pageConentNode.getProperty(TEMPLATE_PROP).getString();
+				int templateNameIndex = templatePath.lastIndexOf("/");
+				String templateName = templatePath.substring(templateNameIndex+1);
+				
+				return templateName;
+			} else{
+				return "No Template";
+			}
+		}else{
+			return "No Template";
+		}
+	}
+	
+	public String getAssumedSiteLanguage(){
+		if (template.contains("unitec") || template.contains("uvm"))
+		{
+			LOGGER.info("*%*%*%*%LANGUAGE -es");
+			assumedSiteLanguage="es";
+		}
+		return assumedSiteLanguage;
 	}
 }
