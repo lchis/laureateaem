@@ -14,6 +14,7 @@ import com.adobe.cq.sightly.WCMUsePojo;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
+
 public class PageSectionLabel extends WCMUsePojo {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PageSectionLabel.class);
 	private static final String TEMPLATE_PROP = "cq:template";
@@ -66,34 +67,30 @@ public class PageSectionLabel extends WCMUsePojo {
 		if(sectionIndex >= 0){
 			int colourIndex = sectionIndex % WALDEN_COLOURS.length;
 			
-			//Node node =getCurrentPage().adaptTo(Node.class);
-			//Property prop=node.getProperty("jcr:template");
-			String title="";//prop.getString();
-			
-			LOGGER.info("*%*%*%*%Title -", title);
-			if(title.contains("uvm") )
+			if(template.contains("walden") )
 			{
 				LOGGER.info("*%*%*%*%Color -",UVM_COLOURS[colourIndex]);
-				return UVM_COLOURS[colourIndex];
+				return WALDEN_COLOURS[colourIndex];
 			}
-			else if (title.contains("unitec") )
+			else if (template.contains("unitec") )
 			{
 				LOGGER.info("*%*%*%*%Color -",UNITEC_COLOURS[colourIndex]);
 				return UNITEC_COLOURS[colourIndex];
 			}
-			else
+			else if (template.contains("uvm"))
 			{
 				LOGGER.info("*%*%*%*%Color -",WALDEN_COLOURS[colourIndex]);
-				return WALDEN_COLOURS[colourIndex];
+				return UVM_COLOURS[colourIndex];
 			}
-		
+			else
+				return DEFAULT_COLOUR;
 		} else{
 			LOGGER.warn("Received invalid section node id, returning blank colour");
 			return DEFAULT_COLOUR;
 		}
 	}
 	
-	public String findTemplate(Resource resource) throws RepositoryException{
+	private String findTemplate(Resource resource) throws RepositoryException{
 		ResourceResolver resourceResolver = resource.getResourceResolver();
 		PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
 		Page containingPage = pageManager.getContainingPage(resource);
@@ -117,7 +114,4 @@ public class PageSectionLabel extends WCMUsePojo {
 		}
 	}
 	
-	public String getTemplate(){
-		return template;
-	}
 }
