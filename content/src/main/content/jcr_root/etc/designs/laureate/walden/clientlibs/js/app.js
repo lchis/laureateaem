@@ -27,9 +27,9 @@ function getBbURL ( resource ) {
     var rootServiceURL     = getQueryVariable('service_url') || defServiceURL;
     var serviceURL = rootServiceURL + '/' + courseID + '/' + resource + '/';
     var thisURL = "";
-
+    
     jQuery.ajax({
-        async: false,
+        async: true,
         type: 'GET',
         url: serviceURL,
         success: function(data) { retData ( data ); }
@@ -60,7 +60,7 @@ function ActivateLink ( resource, target, myObj ) {
             if (resource == 'CourseHome') {
                 courseid = stripCourseID(txtURL);
                 txtURL = link['CourseHome'] + courseid;
-                txtURL="https://class.waldenu.edu/webapps/blackboard/execute/launcher?type=Course&url=&id=_16242545_1";
+                //txtURL="https://class.waldenu.edu/webapps/blackboard/execute/launcher?type=Course&url=&id=_16242545_1";
             }
         }
 

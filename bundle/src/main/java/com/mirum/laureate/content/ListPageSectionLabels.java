@@ -104,7 +104,6 @@ public class ListPageSectionLabels extends WCMUsePojo{
 	public String getAssumedSiteLanguage(){
 		if (template.contains("unitec") || template.contains("uvm"))
 		{
-			LOGGER.info("*%*%*%*%LANGUAGE -es");
 			assumedSiteLanguage="es";
 		}
 		return assumedSiteLanguage;

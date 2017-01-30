@@ -69,17 +69,14 @@ public class PageSectionLabel extends WCMUsePojo {
 			
 			if(template.contains("walden") )
 			{
-				LOGGER.info("*%*%*%*%Color -",UVM_COLOURS[colourIndex]);
 				return WALDEN_COLOURS[colourIndex];
 			}
 			else if (template.contains("unitec") )
 			{
-				LOGGER.info("*%*%*%*%Color -",UNITEC_COLOURS[colourIndex]);
 				return UNITEC_COLOURS[colourIndex];
 			}
 			else if (template.contains("uvm"))
 			{
-				LOGGER.info("*%*%*%*%Color -",WALDEN_COLOURS[colourIndex]);
 				return UVM_COLOURS[colourIndex];
 			}
 			else
