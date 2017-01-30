@@ -1,5 +1,5 @@
-<nav class="small-2 medium-1 small-text-center columns hide-for-print">
-	<a href="#menu" role="button" class="right-off-canvas-toggle">☰ <span>Menu</span></a>
+<nav class="small-2 medium-1 small-text-center columns hide-for-print" data-sly-use.pageSections="com.mirum.laureate.content.ListPageSectionLabels">
+	<a href="#menu" role="button" class="right-off-canvas-toggle">☰ <span>${'Menu' @ i18n, locale=pageSections.assumedSiteLanguage}</span></a>
 </nav>
 <nav class="right-off-canvas-menu" id="menu" data-sly-use.rightNavPojo="com.mirum.laureate.content.RightNavPojo">
     <ul class="side-nav header text-right menu-exit">
@@ -9,20 +9,20 @@
 		<li><a href="#disabled" onclick="ActivateLink('CourseHome', null, this)">${currentPage.title}</a> </li>
 	</ul>
 	<ul class="side-nav primary">
-        <li><a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" class="back-to-class-home">Back to Blackboard</a></li>
+        <li><a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" class="back-to-class-home">${'Back to Blackboard' @ i18n, locale=pageSections.assumedSiteLanguage}</a></li>
 	</ul>
 	<ul class="side-nav primary">
-        <li data-sly-test="${rightNavPojo.showSyllabus}"><a href="${rightNavPojo.syllabusUrl}.html" class="nav-link">Syllabus</a></li>
-		<li> <a href="#disabled" onclick="ActivateLink('Calendar','BBWindow', this)" class="nav-link"> Course Calendar </a> </li>
+        <li data-sly-test="${rightNavPojo.showSyllabus}"><a href="${rightNavPojo.syllabusUrl}.html" class="nav-link">${'Syllabus' @ i18n, locale=pageSections.assumedSiteLanguage}</a></li>
+		<li> <a href="#disabled" onclick="ActivateLink('Calendar','BBWindow', this)" class="nav-link"> ${'Course Calendar' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
 	</ul>
     <ul class="side-nav secondary" data-sly-list.childPage="${rightNavPojo.childPages}">
     <li> <a href="${childPage.path}.html" class="nav-link">${childPage.title}</a> </li>
 	</ul>
 	<ul class="side-nav tertiary">
-		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_studentSupport.html" class="nav-link"> Student Support </a> </li>
-		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_waldenLinks.html" class="nav-link"> Walden Links </a> </li>
-		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_guidelinesPolicies.html" class="nav-link"> Guidelines and Policies </a> </li>
-		<li> <a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" class="button"> Back to Blackboard </a> </li>
-		<li> <a href="https://mym.cdn.laureate-media.com/2dett4d/Walden/WCFE/2016/landing_classroom/index.html" target="_blank"> Help </a> </li>
+		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_studentSupport.html" class="nav-link"> ${'Student Support' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
+		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_waldenLinks.html" class="nav-link"> ${'Walden Links' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
+		<li> <a href="./html/1_Standard_Documents/1_Current_Documents/USW1_UEF_guidelinesPolicies.html" class="nav-link"> ${'Guidelines and Policies' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
+		<li> <a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" class="button"> ${'Back to Blackboard' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
+		<li> <a href="https://mym.cdn.laureate-media.com/2dett4d/Walden/WCFE/2016/landing_classroom/index.html" target="_blank"> ${'Help' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
 	</ul>
 </nav>
