@@ -60,7 +60,6 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/container">
                                 <items jcr:primaryType="cq:WidgetCollection">
-                                    <blackboardlink/>
                                     <hero
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/fileupload"
@@ -107,6 +106,7 @@
                                         name="./logo/sling:resourceType"
                                         renderHidden="{Boolean}true"
                                         value="wcm/foundation/components/image"/>
+                                    <blackboardlink/>
                                 </items>
                             </column>
                         </items>

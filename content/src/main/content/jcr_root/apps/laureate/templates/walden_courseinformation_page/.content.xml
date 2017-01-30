@@ -6,6 +6,7 @@
     allowedPaths="[/content(/.*)?]"
     ranking="{Long}1">
     <jcr:content
+        cq:designPath="/etc/designs/laureate"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="laureate/components/structure/page/walden_courseinformation_page"/>
 </jcr:root>
