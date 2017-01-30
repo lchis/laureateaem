@@ -15,7 +15,7 @@
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
         sling:message="Actividad"/>
-    <Back_x0020_To_x0020_Blackboard
+    <Back_x0020_to_x0020_Blackboard
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
         sling:message="Ir a Blackboard"/>
