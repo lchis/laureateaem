@@ -29,7 +29,7 @@
         <publish.crx.port>4503</publish.crx.port>
         <publish.crx.username>admin</publish.crx.username>
         <publish.crx.password>admin</publish.crx.password>
-        <remote.crx.host>http://author893.adobedemo.com</remote.crx.host>
+        <remote.crx.host>author893.adobedemo.com</remote.crx.host>
         <remote.crx.port>80</remote.crx.port>
         <remote.crx.username>admin</remote.crx.username>
         <remote.crx.password>NKPqSL7i</remote.crx.password>

@@ -29,7 +29,7 @@ function getBbURL ( resource ) {
     var thisURL = "";
     
     jQuery.ajax({
-        async: true,
+        async: false,
         type: 'GET',
         url: serviceURL,
         success: function(data) { retData ( data ); }
