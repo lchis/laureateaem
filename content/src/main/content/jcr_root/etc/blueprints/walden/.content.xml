@@ -5,13 +5,13 @@
         cq:lastModified="{Date}2017-01-14T14:14:58.512-08:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/wcm/msm/templates/blueprint"
-        jcr:description="Blueprint to build a Laureate course page, along with the required subpages."
+        jcr:description="Blueprint to build a Walden course page, along with the required subpages."
         jcr:lastModified="{Date}2017-01-14T14:14:58.510-08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        jcr:title="Laureate"
+        jcr:title="Walden"
         sling:resourceType="wcm/msm/components/blueprint"
-        sitePath="/content/laureatecourse"
+        sitePath="/content/laureate-blueprints/walden-blueprint"
         thumbnailRotate="0">
         <dialog/>
         <thumbnail/>

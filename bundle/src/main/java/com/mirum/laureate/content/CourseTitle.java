@@ -3,7 +3,7 @@ package com.mirum.laureate.content;
 import com.adobe.cq.sightly.WCMUsePojo;
 
 public class CourseTitle extends WCMUsePojo {
-	private static final int DEPTH_OF_ROOT_PAGE = 3;
+	private static final int DEPTH_OF_ROOT_PAGE = 4;
 	private String title;
 	
 	@Override

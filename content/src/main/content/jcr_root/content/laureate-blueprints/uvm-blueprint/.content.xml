@@ -5,25 +5,31 @@
         cq:cloudserviceconfigs="[[]]"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2017-01-14T13:55:35.655-08:00"
+        cq:lastModified="{Date}2017-01-31T15:36:53.277-05:00"
         cq:lastModifiedBy="admin"
-        cq:template="/apps/laureate/templates/walden_courseinformation_page"
+        cq:lastRolledout="{Date}2017-01-31T15:36:53.290-05:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/laureate/templates/uvm_courseinformation_page"
         jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
         jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Laureate Course"
-        sling:resourceType="laureate/components/structure/page/walden_courseinformation_page">
+        jcr:title="UVM Blueprint"
+        sling:resourceType="laureate/components/structure/page/uvm_courseinformation_page">
         <image
             jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
             jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"/>
         <hero
             jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
             jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/image"
             fileReference="/content/dam/laureate/banners/USW1_XXXX_XXXX_courseOverview_heroImage.jpg"/>
         <par
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <course_section
@@ -31,6 +37,7 @@
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-01-14T13:55:28.805-08:00"
                 jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/course-section"/>
             <course_section_542715462
@@ -38,6 +45,7 @@
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-01-14T13:55:32.153-08:00"
                 jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/course-section"/>
             <course_section_766923279
@@ -45,9 +53,15 @@
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-01-14T13:55:35.653-08:00"
                 jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/course-section"/>
         </par>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/laureate-blueprints/walden-blueprint"
+            cq:rolloutConfigs="[/etc/msm/rolloutconfigs/uvm,/etc/msm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
     <en/>
     <fr/>

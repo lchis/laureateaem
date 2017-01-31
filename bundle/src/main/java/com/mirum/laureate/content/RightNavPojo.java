@@ -22,7 +22,7 @@ public class RightNavPojo extends WCMUsePojo{
 	private static final String PATH_TO_COURSE_INFORMATION_PAGE	= "course-information";
 	private static final String PATH_TO_RESOURCE_LIST_PAGE		= "resource-list";*/
 	private static final String[] CHILD_PAGES_TO_IGNORE			= {PATH_TO_SYLLABUS_PAGE};
-	private static final int DEPTH_OF_ROOT_PAGE = 2;
+	private static final int DEPTH_OF_ROOT_PAGE = 4;
 	
 	private ArrayList<Page> childPages;
 	private String linkToBlackboard;

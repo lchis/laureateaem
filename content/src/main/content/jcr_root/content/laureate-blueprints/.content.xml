@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[[]]"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2017-01-14T13:55:35.655-08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/laureate/templates/walden_courseinformation_page"
+        jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Laureate Blueprints"
+        sling:resourceType="laureate/components/structure/page/walden_courseinformation_page">
+        <image
+            jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"/>
+        <hero
+            jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/image"
+            fileReference="/content/dam/laureate/banners/USW1_XXXX_XXXX_courseOverview_heroImage.jpg"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <course_section
+                jcr:created="{Date}2017-01-14T13:55:28.805-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-14T13:55:28.805-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="laureate/components/content/course-section"/>
+            <course_section_542715462
+                jcr:created="{Date}2017-01-14T13:55:32.153-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-14T13:55:32.153-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="laureate/components/content/course-section"/>
+            <course_section_766923279
+                jcr:created="{Date}2017-01-14T13:55:35.653-08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-01-14T13:55:35.653-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="laureate/components/content/course-section"/>
+        </par>
+    </jcr:content>
+    <walden-blueprint/>
+    <uvm-blueprint/>
+</jcr:root>

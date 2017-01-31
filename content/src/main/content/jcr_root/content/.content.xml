@@ -25,12 +25,10 @@
     <geometrixx/>
     <geometrixx-media/>
     <geometrixx-gov/>
-    <oak:index/>
-    <repl/>
     <we-retail/>
-    <waldencourse/>
-    <we-edu-template2/>
-    <we-edu-template1/>
+    <oak:index/>
     <laureate/>
-    <laureatecourse/>
+    <testlaur/>
+    <dongmt/>
+    <laureate-blueprints/>
 </jcr:root>
