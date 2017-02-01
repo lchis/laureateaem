@@ -5,9 +5,9 @@
         cq:cloudserviceconfigs="[[]]"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2017-01-31T15:36:53.277-05:00"
+        cq:lastModified="{Date}2017-02-01T14:29:28.814-05:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2017-01-31T15:36:53.290-05:00"
+        cq:lastRolledout="{Date}2017-02-01T14:29:28.824-05:00"
         cq:lastRolledoutBy="admin"
         cq:template="/apps/laureate/templates/uvm_courseinformation_page"
         jcr:lastModified="{Date}2017-01-14T13:55:15.412-08:00"
@@ -60,7 +60,7 @@
         <cq:LiveSyncConfig
             cq:isDeep="{Boolean}true"
             cq:master="/content/laureate-blueprints/walden-blueprint"
-            cq:rolloutConfigs="[/etc/msm/rolloutconfigs/uvm,/etc/msm/rolloutconfigs/default]"
+            cq:rolloutConfigs="[/etc/msm/rolloutconfigs/default,/etc/msm/rolloutconfigs/uvm]"
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
     <en/>

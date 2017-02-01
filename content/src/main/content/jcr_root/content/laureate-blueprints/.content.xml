@@ -50,5 +50,6 @@
         </par>
     </jcr:content>
     <walden-blueprint/>
+    <unitec-blueprint/>
     <uvm-blueprint/>
 </jcr:root>

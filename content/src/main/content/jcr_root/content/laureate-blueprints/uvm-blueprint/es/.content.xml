@@ -4,9 +4,9 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2017-01-31T15:36:54.326-05:00"
+        cq:lastModified="{Date}2017-02-01T14:29:29.755-05:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2017-01-31T15:36:54.375-05:00"
+        cq:lastRolledout="{Date}2017-02-01T14:29:29.794-05:00"
         cq:lastRolledoutBy="admin"
         cq:template="/apps/laureate/templates/uvm_courseinformation_page"
         jcr:lastModified="{Date}2017-01-16T10:41:45.545-08:00"
@@ -16,35 +16,35 @@
         jcr:title="Spanish"
         sling:resourceType="laureate/components/structure/page/uvm_courseinformation_page">
         <par
-            cq:lastRolledout="{Date}2017-01-31T15:36:54.363-05:00"
+            cq:lastRolledout="{Date}2017-02-01T14:29:29.784-05:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <page_section
-                cq:lastRolledout="{Date}2017-01-31T15:36:54.371-05:00"
+                cq:lastRolledout="{Date}2017-02-01T14:29:29.790-05:00"
                 cq:lastRolledoutBy="admin"
                 jcr:created="{Date}2017-01-16T17:17:40.238-08:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-01-31T15:36:54.309-05:00"
+                jcr:lastModified="{Date}2017-02-01T14:29:29.742-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="laureate/components/content/page-section"
                 pageSectionLabel="Course Information">
                 <page-section-par
-                    cq:lastRolledout="{Date}2017-01-31T15:36:54.374-05:00"
+                    cq:lastRolledout="{Date}2017-02-01T14:29:29.793-05:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys"/>
             </page_section>
             <page_section_1051933009
-                cq:lastRolledout="{Date}2017-01-31T15:36:54.375-05:00"
+                cq:lastRolledout="{Date}2017-02-01T14:29:29.793-05:00"
                 cq:lastRolledoutBy="admin"
                 jcr:created="{Date}2017-01-16T17:17:51.509-08:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-01-31T15:36:54.319-05:00"
+                jcr:lastModified="{Date}2017-02-01T14:29:29.750-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -52,16 +52,16 @@
                 pageSectionLabel="Academic Intergrity"/>
         </par>
         <image
-            cq:lastRolledout="{Date}2017-01-31T15:36:54.375-05:00"
+            cq:lastRolledout="{Date}2017-02-01T14:29:29.794-05:00"
             cq:lastRolledoutBy="admin"
-            jcr:lastModified="{Date}2017-01-31T15:36:54.323-05:00"
+            jcr:lastModified="{Date}2017-02-01T14:29:29.752-05:00"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"/>
         <hero
-            cq:lastRolledout="{Date}2017-01-31T15:36:54.375-05:00"
+            cq:lastRolledout="{Date}2017-02-01T14:29:29.794-05:00"
             cq:lastRolledoutBy="admin"
-            jcr:lastModified="{Date}2017-01-31T15:36:54.325-05:00"
+            jcr:lastModified="{Date}2017-02-01T14:29:29.755-05:00"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
