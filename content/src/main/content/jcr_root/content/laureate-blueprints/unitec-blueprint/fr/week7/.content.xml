@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-02-01T14:30:24.276-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-02-01T14:30:24.290-05:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/laureate/templates/unitec_courseinformation_page"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Week 7"
+        sling:resourceType="laureate/components/structure/page/unitec_courseinformation_page"/>
+</jcr:root>
