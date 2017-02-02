@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:defaultView="html"
+        cq:lastModified="{Date}2010-08-17T12:02:06.021+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/msm/templates/rolloutconfig"
+        cq:trigger="rollout"
+        jcr:description="Converts templates from Laureate Walden to Laureate Unitec"
+        jcr:lastModified="{Date}2010-08-17T12:02:06.015+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Laureate Unitec Rollout Config"
+        sling:resourceType="wcm/msm/components/rolloutconfig"
+        actions="contentCopy">
+        <editProperties
+            jcr:primaryType="cq:LiveSyncAction"
+            editMap="sling:resourceType#^laureate/components/structure/page/walden_courseinformation_page$#laureate/components/structure/page/unitec_courseinformation_page,cq:template#^/apps/laureate/templates/walden_courseinformation_page$#/apps/laureate/templates/unitec_courseinformation_page"
+            enabled="true"/>
+    </jcr:content>
+</jcr:root>
