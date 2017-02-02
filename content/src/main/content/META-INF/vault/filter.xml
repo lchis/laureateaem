@@ -3,8 +3,11 @@
     <filter root="/apps/laureate"/>
     <filter root="/etc/designs/laureate"/>
     <filter root="/etc/blueprints/walden"/>
+    <filter root="/etc/blueprints/uvm"/>
+    <filter root="/etc/blueprints/unitec"/>
     <filter root="/content/laureate-blueprints"/>
     <filter root="/etc/msm/rolloutconfigs/uvm"/>
+    <filter root="/etc/msm/rolloutconfigs/unitec"/>
     <filter root="/etc/workflow/models/laureate-course-creation-wf"/>
     <filter root="/libs/cq/core/content/projects/templates/default/workflows/models/createcourse"/>
 </workspaceFilter>
