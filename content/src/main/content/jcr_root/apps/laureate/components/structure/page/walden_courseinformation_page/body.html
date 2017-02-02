@@ -18,8 +18,8 @@
             		</div>
           		</div>
 
-          		<header class="hero hide-for-print">
-					<sly data-sly-resource="${'hero' @ resourceType='wcm/foundation/components/image', wcmmode='disabled'}">
+          		<header class="hero hide-for-print" data-sly-use.heroImage="com.mirum.laureate.content.HeroImagePojo">
+					<sly data-sly-resource="${heroImage.heroImagePath @ resourceType='wcm/foundation/components/image', wcmmode='disabled'}">
           		</header>
         	</header>
         	<div class="row">
