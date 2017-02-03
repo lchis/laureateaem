@@ -11,13 +11,13 @@
         <ul class="side-nav primary">
         	<li><a href="#disabled" onclick="ActivateLink('CourseHome', null, this)" class="back-to-class-home">${'Back to Blackboard' @ i18n, locale=pageSections.assumedSiteLanguage}</a></li>
 		</ul>
-        <ul class="side-nav primary">
+       <!-- <ul class="side-nav primary">
          	<li data-sly-test="${rightNavPojo.showSyllabus}"><a href="${rightNavPojo.syllabusUrl}.html" class="nav-link">${'General Information' @ i18n, locale=pageSections.assumedSiteLanguage}</a></li>
             <li> <a href="UNI_AL1403_M4_syllabus.html#checklist" class="nav-link"> ${'Activities List' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
             <li> <a href="UNI_AL1403_M4_resourceList.html" class="nav-link">${'List of Documents' @ i18n, locale=pageSections.assumedSiteLanguage} </a> </li>
-        </ul>
+        </ul>-->
 	    <ul class="side-nav secondary" data-sly-list.childPage="${rightNavPojo.childPages}">
-	    	<li> <a href="${childPage.path}.html" class="nav-link">${childPage.title}</a> </li>
+	    	<li> <a href="${childPage.path}.html" class="nav-link">${childPage.title @ i18n, locale=pageSections.assumedSiteLanguage}</a> </li>
 		</ul>
         <ul class="side-nav tertiary">
             <li> <a href="../../1_Standard_Documents/1_Current_Documents/USW1_UEF_studentSupport.html"> Asistente Lince </a> </li>
