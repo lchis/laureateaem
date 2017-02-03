@@ -28,27 +28,22 @@
                         fieldLabel="Page Section Color Override:"
                         name="./colourOverride">
                         <items jcr:primaryType="nt:unstructured">
-                            <red
+                            <empty
                                 jcr:primaryType="nt:unstructured"
-                                name="red"
-                                text="Red"/>
-                            <blue
+                                name=""
+                                text="empty"/>
+                            <navy
                                 jcr:primaryType="nt:unstructured"
-                                name="red"
-                                text="Red"/>
-                            <green
+                                name="navy"
+                                text="navy"/>
+                            <gold
                                 jcr:primaryType="nt:unstructured"
-                                name="red"
-                                text="Red"/>
-                            <Copy_x0020_of_x0020_red
+                                name="Gold"
+                                text="gold"/>
+                            <purple
                                 jcr:primaryType="nt:unstructured"
-                                name="red"
-                                text="Red"/>
-                            <purple jcr:primaryType="nt:unstructured"/>
-                            <Copy_x0020_of_x0020_Copy_x0020_of_x0020_red
-                                jcr:primaryType="nt:unstructured"
-                                name="red"
-                                text="Red"/>
+                                name="purple"
+                                text="purple"/>
                         </items>
                     </colorOverride>
                 </items>

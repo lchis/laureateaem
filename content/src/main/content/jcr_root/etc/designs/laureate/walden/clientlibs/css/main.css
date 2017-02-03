@@ -3145,7 +3145,7 @@ blockquote p {
 .off-canvas-wrap {
     -webkit-backface-visibility: hidden;
     position: relative;
-    width: 100%;
+    width: 100% !important;
     overflow: hidden;
 }
 
@@ -5546,4 +5546,9 @@ article h6 {
     .printables {
         display: none;
     }
+}
+
+.row{
+	margin-left: none !important;
+	margin: 0 auto !important;
 }
