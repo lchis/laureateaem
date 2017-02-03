@@ -7,6 +7,7 @@ import javax.jcr.RepositoryException;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ValueMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,15 +26,19 @@ public class PageSectionLabel extends WCMUsePojo {
 	private final static String[] UVM_COLOURS={"", "blue", "blue", "red"};
 	private final static String DEFAULT_COLOUR = "";
 	
+	private final static String COLOUR_OVERRIDE_PROP = "colourOverride";
+	
 	private PageSectionBean pageSectionBean;
 	private int sectionIndex;
 	private String template;
+	private String colourOverride;
 	
 	@Override
 	public void activate() throws Exception {
 		pageSectionBean = new PageSectionBean(getResource());
 		sectionIndex = findSectionIndex();
 		template = findTemplate(getResource());
+		this.colourOverride = getResource().adaptTo(ValueMap.class).get(COLOUR_OVERRIDE_PROP, "");
 	}
 	
 	private int findSectionIndex(){
@@ -64,6 +69,10 @@ public class PageSectionLabel extends WCMUsePojo {
 	}
 	
 	public String getColour(){
+		if(colourOverride != null && !colourOverride.isEmpty()){
+			return colourOverride;
+		}
+		
 		if(sectionIndex >= 0){
 			int colourIndex = sectionIndex % WALDEN_COLOURS.length;
 			

@@ -21,6 +21,36 @@
                         fieldDescription="Label for the page section that will serve as a link in the top nav bar"
                         fieldLabel="Page Section Label:"
                         name="./pageSectionLabel"/>
+                    <colorOverride
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldDescription="Select a color to override the default one for the page-section"
+                        fieldLabel="Page Section Color Override:"
+                        name="./colourOverride">
+                        <items jcr:primaryType="nt:unstructured">
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                name="red"
+                                text="Red"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                name="red"
+                                text="Red"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                name="red"
+                                text="Red"/>
+                            <Copy_x0020_of_x0020_red
+                                jcr:primaryType="nt:unstructured"
+                                name="red"
+                                text="Red"/>
+                            <purple jcr:primaryType="nt:unstructured"/>
+                            <Copy_x0020_of_x0020_Copy_x0020_of_x0020_red
+                                jcr:primaryType="nt:unstructured"
+                                name="red"
+                                text="Red"/>
+                        </items>
+                    </colorOverride>
                 </items>
             </column>
         </items>

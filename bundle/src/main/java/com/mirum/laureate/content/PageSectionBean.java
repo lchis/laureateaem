@@ -12,6 +12,10 @@ public class PageSectionBean {
 	public PageSectionBean(Resource pageSectionResource){
 		this.label = pageSectionResource.adaptTo(ValueMap.class).get(PAGE_LABEL_PROP, "");
 		this.id = generateId(label);
+		
+		/**
+		 * TODO: Add overwriting colour input through page section component dialog
+		 */
 	}
 	
 	public String getLabel(){
