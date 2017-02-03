@@ -5,9 +5,23 @@
     <uvm/>
     <walden/>
     <jcr:content
-        cq:lastModified="{Date}2013-12-11T00:48:55.443-08:00"
+        cq:lastModified="{Date}2017-02-02T12:00:54.331-05:00"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="Laureate Design"
-        sling:resourceType="wcm/core/components/designer"/>
+        sling:resourceType="wcm/core/components/designer">
+        <unitec_courseinformation_page jcr:primaryType="nt:unstructured">
+            <par jcr:primaryType="nt:unstructured">
+                <page-section jcr:primaryType="nt:unstructured">
+                    <page-section-par
+                        jcr:lastModified="{Date}2017-02-02T12:00:54.319-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        components="[/libs/wcm/foundation/components/image,/libs/foundation/components/text]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </page-section-par>
+                </page-section>
+            </par>
+        </unitec_courseinformation_page>
+    </jcr:content>
 </jcr:root>

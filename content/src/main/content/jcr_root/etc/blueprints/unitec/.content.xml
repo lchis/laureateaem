@@ -9,7 +9,7 @@
         jcr:lastModified="{Date}2017-01-14T14:14:58.510-08:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        jcr:title="UVM"
+        jcr:title="Unitec"
         sling:resourceType="wcm/msm/components/blueprint"
         sitePath="/content/laureate-blueprints/unitec-blueprint"
         thumbnailRotate="0">
