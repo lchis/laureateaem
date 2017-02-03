@@ -19,6 +19,10 @@
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
         sling:message="Ir a Blackboard"/>
+    <Course_x0020_Information
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Información General"/>
     <Documents
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
@@ -51,6 +55,38 @@
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
         sling:message="Semana"/>
+    <Week_x0020_1
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 1"/>
+    <Week_x0020_2
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 2"/>
+    <Week_x0020_3
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 3"/>
+    <Week_x0020_4
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 4"/>
+    <Week_x0020_5
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 5"/>
+    <Week_x0020_6
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana 6"/>
+    <Week1
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana1"/>
+    <Week2
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Semana2"/>
     <Weekly_x0020_Summary
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
