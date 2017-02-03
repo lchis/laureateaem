@@ -9,6 +9,8 @@ public class CourseTitle extends WCMUsePojo {
 	@Override
 	public void activate() throws Exception {
 		Page rootPage = PojoHelpers.getRootPage(this);
+		rootPage = rootPage.getParent() != null ? rootPage.getParent() : rootPage;
+		
 		this.title = rootPage.getTitle();
 	}
 	
