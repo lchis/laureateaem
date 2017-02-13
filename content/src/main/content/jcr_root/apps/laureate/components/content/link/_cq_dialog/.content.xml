@@ -11,15 +11,18 @@
             sling:resourceType="granite/ui/components/foundation/layouts/tabs"
             type="nav"/>
         <items jcr:primaryType="nt:unstructured">
-            <file
+            <column
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Image"
+                jcr:title="Link"
                 sling:resourceType="granite/ui/components/foundation/section">
                 <layout
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
                     margin="{Boolean}false"/>
                 <items jcr:primaryType="nt:unstructured">
+                    <componentstyles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/hidden"/>
                     <column
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/container">
@@ -32,14 +35,62 @@
                                 rootPath="/content"/>
                             <linkTitle
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
                                 fieldLabel="Link Title"
                                 name="./linkTitle"
                                 rootPath="/content"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Select a format for the blockquote"
+                                fieldLabel="Format: "
+                                name="./format">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <cta
+                                        jcr:primaryType="nt:unstructured"
+                                        text="clickable"/>
+                                    <note
+                                        jcr:primaryType="nt:unstructured"
+                                        text="note"/>
+                                    <smallnote
+                                        jcr:primaryType="nt:unstructured"
+                                        text="smallnote"/>
+                                </items>
+                            </format>
+                            <icon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Select an icon to appear on the left. This is irrelevant if the format is note or small note"
+                                fieldLabel="Icon: "
+                                name="./icon">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <clickable
+                                        jcr:primaryType="nt:unstructured"
+                                        text="clickable"/>
+                                    <reading
+                                        jcr:primaryType="nt:unstructured"
+                                        text="reading"/>
+                                    <resources
+                                        jcr:primaryType="nt:unstructured"
+                                        text="resources"/>
+                                    <assignment
+                                        jcr:primaryType="nt:unstructured"
+                                        text="assignment"/>
+                                    <discussion
+                                        jcr:primaryType="nt:unstructured"
+                                        text="discussion"/>
+                                    <quiz
+                                        jcr:primaryType="nt:unstructured"
+                                        text="quiz"/>
+                                    <note
+                                        jcr:primaryType="nt:unstructured"
+                                        text="note"/>
+                                </items>
+                            </icon>
                         </items>
                     </column>
                 </items>
-            </file>
+            </column>
         </items>
     </content>
 </jcr:root>
