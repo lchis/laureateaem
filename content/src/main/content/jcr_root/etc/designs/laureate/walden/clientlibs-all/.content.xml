@@ -2,4 +2,4 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:ClientLibraryFolder"
     categories="[apps.laureate.walden.all]"
-    embed="[cq.foundation,cq.jquery.ui,apps.laureate.walden]"/>
+    embed="[cq.foundation,cq.jquery.ui,apps.laureate.walden,apps.laureate.common]"/>

@@ -5,22 +5,39 @@
     <uvm/>
     <walden/>
     <jcr:content
-        cq:lastModified="{Date}2017-02-02T12:00:54.331-05:00"
+        cq:lastModified="{Date}2017-02-10T00:03:28.134Z"
         cq:lastModifiedBy="admin"
+        jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
         jcr:title="Laureate Design"
         sling:resourceType="wcm/core/components/designer">
-        <par
-            jcr:lastModified="{Date}2017-01-17T13:16:44.760-08:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,/libs/wcm/foundation/components/title,group:Laureate]">
-            <section jcr:primaryType="nt:unstructured"/>
-            <video
-                jcr:lastModified="{Date}2017-01-26T13:55:47.173-05:00"
+        <walden_courseinformation_page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-02-07T15:58:23.717-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                partnerId="2238021"/>
-        </par>
+                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,group:Laureate]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </walden_courseinformation_page>
+        <unitec_courseinformation_page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-02-08T21:49:25.610Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="[/libs/wcm/foundation/components/text,group:Laureate]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </unitec_courseinformation_page>
+        <uvm_courseinformation_page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-02-10T00:03:28.134Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,group:Laureate]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </uvm_courseinformation_page>
     </jcr:content>
+    <clientlibs-common/>
 </jcr:root>
