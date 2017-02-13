@@ -8,8 +8,11 @@ import java.util.Map;
 
 import javax.jcr.Node;
 
+import org.apache.sling.api.resource.ValueMap;
+
 public class DownloadFile extends WCMUsePojo {
 	private static final String FILE_REFERENCE_PROP = "fileReference";
+	private static final String FILE_TITLE_PROP		= "fileTitle";
 	
 	private static final Map<String, String> MIME_TYPES;
 	static{
@@ -34,7 +37,8 @@ public class DownloadFile extends WCMUsePojo {
 		assetPath = getResource().adaptTo(Node.class).getProperty(FILE_REFERENCE_PROP).getString();
 		Asset asset = getResourceResolver().getResource(assetPath).adaptTo(Asset.class);
 		
-		title = asset.getName();
+		title = getResource().adaptTo(ValueMap.class).get(FILE_TITLE_PROP, "");
+		title = title.isEmpty() ? asset.getName() : title;
 		
 		String mimeType = asset.getMimeType();
 		format = MIME_TYPES.get(mimeType);

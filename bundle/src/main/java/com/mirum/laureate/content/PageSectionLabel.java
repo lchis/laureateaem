@@ -96,6 +96,10 @@ public class PageSectionLabel extends WCMUsePojo {
 		}
 	}
 	
+	public int getSectionIndex(){
+		return sectionIndex;
+	}
+	
 	private String findTemplate(Resource resource) throws RepositoryException{
 		ResourceResolver resourceResolver = resource.getResourceResolver();
 		PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
