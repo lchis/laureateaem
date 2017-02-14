@@ -1,6 +1,8 @@
 <a data-sly-use.asset="com.mirum.laureate.content.DownloadFile"
 	href="${asset.assetPath}" title="${asset.title}" target="_blank">
     <blockquote class="cta download resources back clickable">
-        <p>${asset.title} (${asset.format})</p>
+		<p>${resource['fileTitle']} ${asset.outputFormat}</p>
+        <sly data-sly-use.paragraphTemplate="/apps/laureate/components/content/blockquote/paragraph-template.html"></sly>
+		<sly data-sly-call="${paragraphTemplate.paragraph}"></sly>
 	</blockquote>
 </a>

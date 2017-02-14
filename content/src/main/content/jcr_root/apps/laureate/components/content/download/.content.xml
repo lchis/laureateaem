@@ -3,5 +3,5 @@
     jcr:description="Component to allow a user to Download a file as per Walden Design"
     jcr:primaryType="cq:Component"
     jcr:title="Download"
-    sling:resourceSuperType="foundation/components/parbase"
+    sling:resourceSuperType="laureate/components/content/blockquote"
     componentGroup="Laureate"/>

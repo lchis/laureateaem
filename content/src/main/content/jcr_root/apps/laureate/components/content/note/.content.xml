@@ -3,5 +3,5 @@
     jcr:description="Fine print text component"
     jcr:primaryType="cq:Component"
     jcr:title="Note"
-    sling:resourceSuperType="wcm/foundation/components/text"
+    sling:resourceSuperType="laureate/components/content/blockquote"
     componentGroup="Laureate"/>
