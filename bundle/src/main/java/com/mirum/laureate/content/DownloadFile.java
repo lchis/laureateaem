@@ -18,6 +18,7 @@ public class DownloadFile extends WCMUsePojo {
 	static{
 		MIME_TYPES = new HashMap<String, String>();
 		MIME_TYPES.put("application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Word");
+		MIME_TYPES.put("application/msword", "Word");
 		MIME_TYPES.put("application/pdf", "PDF");
 	}
 	
@@ -54,5 +55,9 @@ public class DownloadFile extends WCMUsePojo {
 
 	public String getFormat(){
 		return format;
+	}
+	
+	public String getOutputFormat(){
+		return "(" + getFormat() + ")";
 	}
 }
