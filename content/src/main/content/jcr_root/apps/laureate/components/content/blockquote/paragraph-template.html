@@ -1,0 +1,5 @@
+<template data-sly-template.paragraph="paragraph">
+	<p data-sly-use.text="text.js" data-sly-unwrap="${text.context == text.CONST.CONTEXT_HTML}" class="${text.cssClass}" data-emptytext="Text">
+		${text.text @ context=text.context}
+	</p>
+</template>
