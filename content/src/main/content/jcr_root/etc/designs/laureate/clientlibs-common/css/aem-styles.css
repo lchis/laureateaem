@@ -7,12 +7,20 @@ body {
 	color:red;
 }
 
+.hero.hide-for-print img{
+	width: 100%;
+}
+
 main article blockquote.note div {
 	padding: 0.5rem 1rem;
     background-color: #F8F8F8;
     border: none;
     font-size: 0.9rem;
     font-style: italic;
+}
+
+main article blockquote div.small p{
+	font-size: 60%;
 }
 
 main article blockquote.smallnote p{
@@ -36,6 +44,10 @@ main article blockquote.smallnote p{
 	cursor: pointer;
 }
 
+#course-navigation h3 #logo img{
+	max-height: 100%;
+}
+
 .aem-AuthorLayer-Edit .page-section{
 	border: 3px dotted red;
 	margin-bottom: 10px;
@@ -46,3 +58,13 @@ table tbody tr th {
     color: #FFFFFF;
     font-weight: normal;
 }
+
+/* Fixes for bootstrap video inclusion */
+.container{
+	width: 100% !important;
+}
+
+.row{
+	margin-left: auto !important;
+}
+/* END Fixes for video */

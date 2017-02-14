@@ -5,7 +5,7 @@
     <uvm/>
     <walden/>
     <jcr:content
-        cq:lastModified="{Date}2017-02-10T00:03:28.134Z"
+        cq:lastModified="{Date}2017-02-13T21:55:50.867Z"
         cq:lastModifiedBy="admin"
         jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
@@ -13,28 +13,28 @@
         sling:resourceType="wcm/core/components/designer">
         <walden_courseinformation_page jcr:primaryType="nt:unstructured">
             <par
-                jcr:lastModified="{Date}2017-02-07T15:58:23.717-06:00"
+                jcr:lastModified="{Date}2017-02-13T21:55:50.867Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,group:Laureate]">
+                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,/apps/laureate/components/content/bibliography,/apps/laureate/components/content/download,/apps/laureate/components/content/html-video,/apps/laureate/components/content/laureate-video,/apps/laureate/components/content/link,/apps/laureate/components/content/note,/apps/laureate/components/content/page-section,/apps/laureate/components/content/print,/apps/laureate/components/content/quote,/apps/laureate/components/content/title,/apps/laureate/components/content/video]">
                 <section jcr:primaryType="nt:unstructured"/>
             </par>
         </walden_courseinformation_page>
         <unitec_courseinformation_page jcr:primaryType="nt:unstructured">
             <par
-                jcr:lastModified="{Date}2017-02-08T21:49:25.610Z"
+                jcr:lastModified="{Date}2017-02-13T21:53:34.258Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                components="[/libs/wcm/foundation/components/text,group:Laureate]">
+                components="[/libs/wcm/foundation/components/text,/apps/laureate/components/content/bibliography,/apps/laureate/components/content/download,/apps/laureate/components/content/html-video,/apps/laureate/components/content/laureate-video,/apps/laureate/components/content/link,/apps/laureate/components/content/note,/apps/laureate/components/content/print,/apps/laureate/components/content/quote,/apps/laureate/components/content/title,/apps/laureate/components/content/page-section-unitec,/apps/laureate/components/content/video]">
                 <section jcr:primaryType="nt:unstructured"/>
             </par>
         </unitec_courseinformation_page>
         <uvm_courseinformation_page jcr:primaryType="nt:unstructured">
             <par
-                jcr:lastModified="{Date}2017-02-10T00:03:28.134Z"
+                jcr:lastModified="{Date}2017-02-13T21:54:46.891Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,group:Laureate]">
+                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/text,/apps/laureate/components/content/bibliography,/apps/laureate/components/content/download,/apps/laureate/components/content/html-video,/apps/laureate/components/content/laureate-video,/apps/laureate/components/content/link,/apps/laureate/components/content/note,/apps/laureate/components/content/print,/apps/laureate/components/content/quote,/apps/laureate/components/content/title,/apps/laureate/components/content/page-section-uvm,/apps/laureate/components/content/video]">
                 <section jcr:primaryType="nt:unstructured"/>
             </par>
         </uvm_courseinformation_page>
