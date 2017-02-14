@@ -22,8 +22,8 @@ public class PageSectionLabel extends WCMUsePojo {
 	private static final String JCR_CONTENT_NODE = "jcr:content";
 	
 	private final static String[] WALDEN_COLOURS = {"", "purple", "navy", "gold"}; 
-	private final static String[] UNITEC_COLOURS={"", "blue", "blue", "blue"};
-	private final static String[] UVM_COLOURS={"", "blue", "blue", "red"};
+	private final static String[] UNITEC_COLOURS={"", "navy", "navy", "navy"};
+	private final static String[] UVM_COLOURS={"", "navy", "navy", "red"};
 	private final static String DEFAULT_COLOUR = "";
 	
 	private final static String COLOUR_OVERRIDE_PROP = "colourOverride";
