@@ -6,6 +6,7 @@
         cq:lastModified="{Date}2017-02-02T11:57:37.662-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/laureate/templates/uvm_courseinformation_page"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="UVM Blueprint"
         sling:resourceType="laureate/components/structure/page/uvm_courseinformation_page"/>

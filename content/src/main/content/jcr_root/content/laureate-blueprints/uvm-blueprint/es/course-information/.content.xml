@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-02-02T12:03:01.872-05:00"
+        cq:lastModified="{Date}2017-02-03T13:39:21.822-06:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2017-02-02T12:03:01.887-05:00"
+        cq:lastRolledout="{Date}2017-02-03T13:39:21.871-06:00"
         cq:lastRolledoutBy="admin"
         cq:template="/apps/laureate/templates/uvm_courseinformation_page"
         jcr:mixinTypes="[cq:LiveRelationship]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Course Information"
         sling:resourceType="laureate/components/structure/page/uvm_courseinformation_page"
-        blackboardLink="http://www.blackboard.com/"/>
+        blackboardLink="http://www.blackboard.com/">
+        <par
+            cq:lastRolledout="{Date}2017-02-03T13:39:21.867-06:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <title
+                cq:lastRolledout="{Date}2017-02-03T13:39:21.870-06:00"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2017-02-03T13:37:25.247-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-02-03T13:39:21.815-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/title"/>
+        </par>
+        <image
+            cq:lastRolledout="{Date}2017-02-03T13:39:21.870-06:00"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"/>
+        <hero
+            cq:lastRolledout="{Date}2017-02-03T13:39:21.871-06:00"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/image"
+            fileReference="/content/dam/geometrixx-instore/cover-images/surfing.jpg"/>
+        <logo
+            cq:lastRolledout="{Date}2017-02-03T13:39:21.871-06:00"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/image"/>
+    </jcr:content>
 </jcr:root>

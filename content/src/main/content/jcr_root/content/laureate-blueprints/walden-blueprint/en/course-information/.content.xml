@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-01-14T13:27:28.349-08:00"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2017-02-03T13:39:17.290-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/laureate/templates/walden_courseinformation_page"
+        jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+        jcr:lastModifiedBy="admin"
         jcr:primaryType="cq:PageContent"
         jcr:title="Course Information"
         sling:resourceType="laureate/components/structure/page/walden_courseinformation_page"
-        blackboardLink="http://www.blackboard.com/"/>
+        blackboardLink="http://www.blackboard.com/">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <title
+                jcr:created="{Date}2017-02-03T13:37:25.247-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-02-03T13:37:25.247-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/title"/>
+        </par>
+        <image
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"/>
+        <hero
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/image"
+            fileReference="/content/dam/geometrixx-instore/cover-images/surfing.jpg"/>
+        <logo
+            jcr:lastModified="{Date}2017-02-03T13:39:17.284-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/image"/>
+    </jcr:content>
 </jcr:root>

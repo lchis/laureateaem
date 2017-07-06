@@ -97,6 +97,7 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/image"/>
         <cq:LiveSyncConfig
+            cq:excludedPaths="[week8,week7]"
             cq:isDeep="{Boolean}true"
             cq:master="/content/laureate-blueprints/walden-blueprint/en"
             cq:rolloutConfigs="[/etc/msm/rolloutconfigs/default,/etc/msm/rolloutconfigs/unitec]"
@@ -112,6 +113,4 @@
     <week4/>
     <week5/>
     <week6/>
-    <week7/>
-    <week8/>
 </jcr:root>
